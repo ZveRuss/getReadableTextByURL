@@ -14,8 +14,8 @@ Example for using: "python readable.py https://lenta.ru/news/2019/01/22/brain/"
 Tested on articles:
 - https://www.e1.ru/news/spool/news_id-65858581.html - test passed successfully
 - https://lenta.ru/news/2019/01/22/brain/ - test passed succesfully
-- https://lenta.ru/news/2019/01/22/platskart/ - test passed succesfully
 - https://lenta.ru/news/2019/01/21/whatsup_whatsapp - test passed succesfully
+- https://www.gazeta.ru/sport/2019/01/19/a_12134701.shtml - test passed succesfully
 
 
 Further development plans:
