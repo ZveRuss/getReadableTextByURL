@@ -52,6 +52,7 @@ class MiniReadability:
         soup = BeautifulSoup(r, 'html.parser')
         content = soup.find_all(self.content_tags)
         # Getting the entire tag content, described in self.content_tags.
+        wrapped_text = ""
         for p in content:
                 # Skipping empty tags.
                 if p.text != '':
@@ -60,7 +61,6 @@ class MiniReadability:
                     if links != '':
                         for link in links:
                             p.a.replace_with(link.text + str("["+link['href'] + "]"))
-                    wrapped_text = ''
                     # Text formatting in tags according to сolumn width (self.wrap).
                     wrapped_text += ''.join(textwrap.fill(p.text, self.wrap)) + "\n\n"
         self.write_in_file(wrapped_text)
