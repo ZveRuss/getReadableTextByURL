@@ -42,8 +42,7 @@ class MiniReadability:
         # Write file in path, stored in self.path: "[CUR_DIR]/host/path_item1/path_item2/..."
         # with filename, stored in self.filename
         file = open(str(self.path) +'/'+ str(self.filename), mode="w")
-        for st in text:
-            file.write(st.encode('utf-8'))
+        file.write(text)
         file.close()
         
     def get_text(self):
