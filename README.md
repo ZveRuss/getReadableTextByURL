@@ -1,5 +1,3 @@
-test_task_Tenzor
-
 Module for processing the text of the article by URL, based on Requests and BeautifulSoup4 libraries.
 Contain class MiniReadability with next methods:
 
