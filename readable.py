@@ -9,7 +9,7 @@ import textwrap
 from bs4 import BeautifulSoup
 
 
-class MiniReadability:
+class Readability:
     """url - article address.
        filename - file name used to save. Matches the last item in the URL path.
        path - path to save article. Match with URL paths ([CUR_DIR]/host/path1/path2/...)
@@ -68,7 +68,7 @@ class MiniReadability:
 if __name__ == "__main__":
     if (len(sys.argv) > 1):
         try:
-            mr = MiniReadability(sys.argv[1])
+            mr = Readability(sys.argv[1])
             mr.get_text()
             print("Successfully processed")
         except Exception:
